@@ -7,7 +7,21 @@
 <body>
 <script>
   /* write your code below this line  🙂 */
+  let y = 10;
+console.log(y); // 10
 
-</script>
+y = 20; // Update the value
+console.log(y); // 20
+
+{
+  let y = 30; // New scope
+  console.log(y); // 30
+}
+
+console.log(y); // 20 (outside the block scope)
+
+
+
+</script> 
 </body>
 </html>
