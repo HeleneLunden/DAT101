@@ -12,31 +12,58 @@
     <ol>
       <li>Where should you use constants, and where should you use variables? Can they all be constants?</li>
       <p>
-				[Replace this with you answer]
+				You use constants when the value is going to be the same throughout the entire program. 
+        This prevents you from accidentally changing the constant. It provides stability and readability.
+        You use variables when the value can change later in the program. An example is user inputs.
+        
+        Not all variables can be constants. If a value needs to change, for example based on logic or 
+        user interaction, it has to be a variable.
+
 			</p>
       <li>How do parentheses affect the arithmetic outcome of an expression?</li>
       <p>
-				[Replace this with you answer]
+				Parentheses define the order of operations in the expression. 
+        This means that we use parentheses when we need to "solve" the expression in a specific order.
+        You "solve" the part inside of the parentheses first, and then the rest.
 			</p>
       <li>How do we limit floating-point numbers to a given number of decimals?</li>
       <p>
-				[Replace this with you answer]
+				To limit floating-point numbers to a given number of decimals, we can use this element in our program: toFixed().
+        The number of decimals you want, you enter into the parentheses.
+        
+        The answer will appear as a text. We know that because the number will have "" in front and after it. We use the parse.float() to convert it back to a numeric answer.
+        
 			</p>
       <li>How can we compare two floating-point values to see if they are equal (is 12.199999 the same as 12.2)?</li>
       <p>
-				[Replace this with you answer]
+				We can check if the difference between them is smaller than a given "tolerance". This is necessary due to the floating point numbers not being represented precisely enough,
+        which can lead to rounding problems.
+        The tolerance is 0,01.
+        We use "if" to find the answer:
+       let a = 12.2;
+       let b = 12.199999;
+       if ((a-b) < 0.01)  {
+          console.log("True")
+        }  
+        The program will give you the answer "True". The numbers are considered equal within the tolerance of 0.01.
+
 			</p>
       <li>What do comparison operators return, and how can we check if they are FALSE or TRUE?</li>
       <p>
-				[Replace this with you answer]
+				Comparison numbers return a boolean value. This value is either "true" or "false".
+        You can check if the result is true or false using "if" and "else".
 			</p>
       <li>How does the Math.random() function work, and what can it be used for?</li>
       <p>
-				[Replace this with you answer]
+				Math.random() gives us a random number x, where 0 <= x < 1,0. 
+        This function can generate random numbers within a specific range or creating random elements for a game or simulations.
 			</p>
       <li>What is modulus (%), and when do we need this operator in mathematical operations?</li>
       <p>
-				[Replace this with you answer]
+				The modulus operator returns the remainder of the division of two numbers. In simpler terms, it gives you
+        the "leftover" when you divide one number by another. We need this operator in mathematical operations when
+        we want to figure out if a number is even or odd.
+      
 			</p>
     </ol>
 		<script type="module" src="./task_2-2.mjs" defer></script>
