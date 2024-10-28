@@ -8,15 +8,28 @@
     <h2><label for="txtOut">Output from Task 3.1:</label></h2>
     <div style="padding: 10px; min-width: 512px; border: darkblue thin solid; background-color: antiquewhite; font-family: 'Courier New', serif">
       <span id="txtOut" style="white-space: nowrap"></span>
-    </div>
+    </div> 
     <ol>
       <li>Discuss the behavior of part 1, What happens when the wake-up time is not 7 and what happens when it is exactly 7?</li>
-      <p>[Replace this with you answer]</p>
-      <li>Same as question #1. How ever the answer should now be different. Discuss the behaviour of part 2, What happens when the wake-up time is not 7 and what happens when it is exactly 7?</li>
-      <p>[Replace this with you answer]</p>
+      <p>When wakeUpTime is not 7, nothing happens because it is not an else-sentence. In this part, the if-sentence is only there to check if wakeUpTime is 7. 
+        If wakeUpTime is 7, the program will output "My wake up time is 7, so I can take the bus to school." If wakeUpTime is any other value, there is no output. </p>
+      
+        <li>Same as question #1. How ever the answer should now be different. Discuss the behaviour of part 2, What happens when the wake-up time is not 7 and what happens when it is exactly 7?</li>
+      <p>When wakeUpTime is not 7, the else branch activates and prints "I have to take the car to school". If wakeUpTime is exactly 7, the if branch is activated, and the message "I can take the bus to school." is printed.
+        Therefore, the program either prints the bus message or the car message.
+      </p>
       <li>Discuss the behavior of part 3, what happens when wake time is less than 7 or greater than 8?</li>
-      <p>[Replace this with you answer]</p>
+      <p>In this extended if-else structure, the program checks three conditions. If wakeUpTime is exactly 7, the program prints
+        "My wake up time is 7, so I can take the bus to school.". 
+        If wakeUpTime is exactly 8, the program prints "My wake up time is 8, so I can take the train to school.".
+        For any other values, whether wakeUpTime is less than 7 or greater than 8, the program prints 
+        "My wake up time is neither 7 or 8, so I have to take the car to school.". 
+      </p>
       <li>Discuss the behavior for part 4, what happens if the number is exactly 0, is zero positive or negative?</li>
+      <p> When "number" is exactly 0, the if statement in part 5 checks for this condition and prints "The number is Zero". 
+        This means the program treats 0 as a separate category, neither positive or negative. If "number" is greater than 0, it is considdered "Positive", 
+        and if it is less than 0, it is considdered "Negative".
+      </p>
     </ol>
     <script type="module" src="./task_3-1.mjs" defer></script>
   </body>
