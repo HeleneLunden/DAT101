@@ -10,9 +10,43 @@
       <span id="txtOut" style="white-space: nowrap"></span>
     </div>
     <ol>
-      <li>[Write the question here, and copy this for more questions]</li>
-      <p>[Write your answer here, and copy this for more answers]</p>
+      <li>What is the difference between invoking and creating a function?</li>
+      <p>Creating a function is defining it with the function keyword followed by a name
+        and a block of code inside {}that specifies what the function does. For example:
+        function printTodaysDate() {...}. invoking a function is calling it to execute, usually
+        by writing the function name followed by (), like printTodaysDate();
+      </p>
+      <li>Explain the syntax regarding semicolons and code blocks.</li>
+      <p>In Javascript, semicolons are used to terminate statements, although they are optional in many cases. 
+        Code blocks, like those in functions, are enclosed in curly braces {}, allowing multiple statements to
+        be grouped together.
+      </p>
+      <li>What happens when we try to store values from a function when it doesn't return any?</li>
+      <p>If you try to store the result of a function that does'nt return anything, the stored value will
+        be undefined. For example, let result = printTodaysDate(); would make result undefined since
+        printTodaysDate does not return anything.
+      </p>
+      <li>How do we separate parameters from each other when creating a function?</li>
+      <p>Parameters are separated by commas inside the parentheses of the function definition.
+        For instance, in function convertTemperature(temp, scale) {...}, temp and scale are separated by a comma.
+      
+      </p>
+      <li>Explain how parameter names are related during the invocation and creation of a function.</li>
+      <p>When a function is created, parameter names act as placeholders. When you invoke the function, 
+        you pass actual values (arguments) that replace these  placeholders. For instance, in 
+        convertTemperature (25, "C"), 25 replaces temp, and "C" replaces scale.
+      </p>
+      <li>Explain why a parameter is undefined when a function call is missing a parameter.</li>
+      <p>If a function is called with fewer arguments than defines parameters,
+        the missing parameters will be undefined. For example, convertTemperature(25) 
+        would make scale undefined, as there's no second argument to assign to scale.
+      </p>
+      <li>Explain what happens when we use recursive functions.</li>
+      <p>A recursive function calls itself until it reaches a base condition to stop. 
+        For example, in your factorial function, it keeps calling itself with n - 1 until 
+        n is 1, which prevents infinite recursion. Recursive functions are useful for 
+        repetitive tasks but can lead to stack overflow if the base case is not correctly defined.</p>
     </ol>
     <script type="module" src="./task_3-3.mjs" defer></script>
   </body>
-</html>
+</html> 
