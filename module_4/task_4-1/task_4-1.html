@@ -10,9 +10,40 @@
       <span id="txtOut" style="white-space: nowrap"></span>
     </div>
     <ol>
-      <li>[Write the question here, and copy this for more questions]</li>
-      <p>[Write your answer here, and copy this for more answers]</p>
+      <li>1. Why is object-oriented development so important in programming?</li>
+      <p>Object-oriented programming (OOP) is important because it provides a structured and modular 
+        approach to development, where code is organized into objects that represent real-world 
+        entities with associated properties and behaviors. This makes the code more readable, reusable, 
+        and easier to maintain. In your code, the TAccount class represents an account with specific 
+        properties like type, balance, currency, and methods such as deposit and withdrawal, making it 
+        simple to reuse and expand functionality.</p>
+
+      <li>2. In Task 1, we created a static object called "AccountType." 
+        Explain what this object is used for and how this type of object can 
+        help us in software development.</li>
+      <p>The AccountType object stores constant values for account types (such as "Normal," "Saving," etc.). 
+        This type of object is used to organize and centralize values that can be reused in multiple 
+        places within the program. It contributes to consistency and makes the code easier to maintain. 
+        If the account types need to be changed, updating them in the AccountType object will automatically 
+        update all references in the code.</p>
+
+      <li>Discuss why we use encapsulation in classes. Why do we want to "hide" code within our class? 
+        Explain how we can create "private" and "public" members in a constructor function.</li>
+      <p>Encapsulation is used to protect and organize data and functions within a class. By "hiding" 
+        parts of the code with private members, we can control access to internal data and prevent unintended 
+        changes from outside the class. This makes the program more robust and ensures the class is 
+        used correctly. In JavaScript, we can use the # symbol before a variable name (e.g., #balance) 
+        to designate it as private, while public members are accessible without the #. In your code, private 
+        members like #balance and #currencyType are used to maintain control over the balance and currency</p>
+
+      <li>Explain what happens when we use the "new" command in JavaScript.</li>
+      <p>When we use the new command in JavaScript, a new instance of a class is created. 
+        This process involves setting up a new object, binding this to it within the constructor, 
+        and initializing the object's properties and methods as defined in the class. Using new 
+        with a class like TAccount in your code creates a new account instance with its own properties, 
+        such as type, balance, and currency. This instance can then interact with other parts of the program 
+        independently of other instances.</p>
     </ol>
-    <script type="module" src="./task_4-1.mjs" defer></script>
+    <script type="module" src="./task_4-1.mjs" defer></script> 
   </body>
 </html>
