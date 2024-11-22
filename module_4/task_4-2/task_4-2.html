@@ -10,9 +10,78 @@
       <span id="txtOut" style="white-space: nowrap"></span>
     </div>
     <ol>
-      <li>[Write the question here, and copy this for more questions]</li>
-      <p>[Write your answer here, and copy this for more answers]</p>
+      <li>1. What is an array? A short and concise answer is expected here!</li>
+      <p>An array is a data structure that stores multiple values in a single variable. 
+        Each value, or element, is indexed, starting from 0. Arrays are useful for 
+        organizing data and enabling easy access, iteration, and manipulation.</p>
+
+
+      <li>2. What does it mean to "hardcode" when we talk about programming? (In English, 
+        it's called "hard coding", "hard-coding", or "hardcoding").</li>
+      <p>Hardcoding means explicitly writing values directly into the code rather 
+        than dynamically generating or retrieving them at runtime. For example, writing 
+        let numbers = [1, 2, 3]; is hardcoding, while generating the array dynamically 
+        based on user input or calculations is not. Hardcoding is simple but lacks flexibility.</p>
+
+
+      <li>3. Explain in plain text what happens in task 3, and how we can traverse (iterate) the array when we
+        (humans) don't "know" how long the array is.</li>
+      <p>In Task 3, a string is converted into an array using the .split() method. 
+        Each word in the string becomes an element in the array. To traverse the array, 
+        a loop (e.g., for or forEach) is used. Since the array’s length is unknown, 
+        we use the .length property to ensure the loop iterates through all elements</p>
+
+
+      <li>4. Why is it beneficial to store instances of a class in arrays, as in task 4?</li>
+      <p>Storing class instances in arrays allows for organized and efficient management 
+        of related objects. For example, in Task 4, storing multiple TBook instances in an 
+        array makes it easy to perform operations on all books, such as iterating over them 
+        to print their details or applying filters to find specific books.</p>
+
+
+      <li>5. Try your best to explain the EWeekDays object from task 7. How do we use the "value" attribute, for
+        example? In what way do "WeekDay", "Workdays", and "Weekends" differ from each other? If we
+        wanted to create a new element "WorkoutDays", which would contain "Monday", "Wednesday", and
+        "Thursday", how would it ideally look? (I will choose the best answer to this task and reward it with
+        pizza in the cafeteria right after New Year. Remember to mark in your submission if you want to
+        participate in the competition!)</li>
+      <p>The EWeekDays object maps keys (e.g., WeekDay1) to values that represent days of the week. 
+        Each entry contains attributes such as value (a bitmask) and name (the day’s name). 
+        This structure allows for easy access to day-related data. For example, Workdays aggregates 
+        values for Monday through Friday. To add a new element like WorkoutDays (Monday, Wednesday, Thursday), 
+        you could define it as:
+        WorkoutDays: { value: 0x01 + 0x04 + 0x08, name: "WorkoutDays" }
+
+      </p> *//I want to participate in the competition!! With my group Ebbs, Stine and Benedicte. //*
+
+      <li>6. In task 8, we will use a "callback" routine when sorting. Explain how such a "callback" routine works.</li>
+      <p>In Task 8, the .sort() method uses a callback function to determine the sorting order. The callback compares two elements (a and b) and returns:
+
+        A negative value if a should come before b
+        A positive value if a should come after b
+        Zero if they are equal
+        For example, to sort in ascending order:
+        numbers.sort((a, b) => a - b);
+      </p>
+
+
+      <li>7. What happens in the sorting routines you have created? Try to explain how the array can figure out
+        if an element should come before or after another. The best way to answer this is to actually print
+        both parameters each time the sorting routine runs.</li>
+      <p>The sorting routines iterate through the array multiple times, comparing elements based on the 
+        callback function. The callback function determines whether one element is "greater than" another 
+        and thus needs to be swapped. JavaScript's sort algorithm typically uses an optimized version of 
+        the QuickSort or MergeSort algorithm for efficiency.</p>
+
+
+      <li>8. In task 10, we will create an array with rows and columns. Explain what the first element of the array
+        contains.</li>
+      <p>In Task 10, the first element of the array represents the first row of the 2D array. 
+        Each row is an array containing strings that describe the cell's row and column positions. 
+        For example, the first element might look like this:
+        ["Row: 0, Col: 0", "Row: 0, Col: 1", ..., "Row: 0, Col: 8"]
+      </p>
     </ol>
     <script type="module" src="./task_4-2.mjs" defer></script>
   </body>
-</html>
+</html> 
