@@ -18,7 +18,7 @@
     Circumference = 0, Area = 0
   </p>
 </fieldset>
-<p></p>
+<p></p> 
 <fieldset>
   <legend>Task 2: Text</legend>
   <label for="txtTask2Word">Type a word:</label>
@@ -97,8 +97,40 @@
   </div>
 </fieldset>
 <ol>
-  <li>[Write the question here, and copy this for more questions]</li>
-  <p>[Write your answer here, and copy this for more answers]</p>
+  <li>1. In this assignment, we use the DOM. Explain how this library can help us develop interactive web pages.</li>
+  <p>The Document Object Model (DOM) is a programming interface for web documents. It allows JavaScript to interact 
+    with HTML and CSS, making web pages dynamic and interactive. In this assignment:
+    We use the DOM to retrieve user inputs (document.getElementById).
+    It enables us to update the content dynamically (e.g., displaying calculated results or selected options).
+    We add event listeners to respond to user interactions, such as button clicks, dropdown selections, or keypress 
+    events. By leveraging the DOM, we can create an engaging user experience by allowing real-time updates and responses 
+    without needing to reload the page.</p>
+
+  <li>2. What is an event? Simply explain what happens when we add an event listener to an object.</li>
+  <p>An event is an interaction or action that occurs in the browser, such as a mouse click, keypress, 
+    or selection change. When we add an event listener to an object:
+
+    The browser "listens" for the specified event (e.g., click, change, or keypress).
+    When the event occurs, the assigned function (callback) is executed. For example, in Task 2, 
+    we added a keypress event listener to a text input. Every time the user presses "Enter," the event 
+    triggers a function that adds the entered word to a list and updates the output dynamically.</p>
+
+  <li>3. Sometimes we need to use an event object to get data from the event. Explain how this event object is structured.</li>
+  <p>The event object provides information about the triggered event and is automatically passed to event handler functions. It contains:
+
+    Type: The type of event (e.g., click, keypress).
+    Target: The element that triggered the event (e.g., an input field or button).
+    Properties: Additional details like the key pressed (event.key) or mouse coordinates (event.clientX). 
+    For example, in Task 2, we use the event.target.value property to get the value entered in the input field. 
+    This helps us dynamically capture and process user input.</p>
+
+  <li>4. Explain the main difference between DOM id and DOM name. Can we have identical IDs?</li>
+  <p>DOM id: A unique identifier for an element. Each id must be unique within the document to avoid conflicts. 
+    or instance, in Task 1, the id="rectLength" is used to specifically retrieve the length input field.
+    DOM name: A name attribute is often used for grouping multiple elements (e.g., radio buttons with name="carType" 
+    in Task 4). Multiple elements can share the same name for logical grouping.
+    Identical IDs: It is invalid to have identical id values in the same document. If duplicate IDs exist, methods 
+    like getElementById will return only the first matching element, leading to unexpected behavior.</p>
 </ol>
 <script type="module" src="./task_4-3.mjs" defer></script>
 </body>
